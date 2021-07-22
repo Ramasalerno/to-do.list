@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  background-color: #036468;
+}
+
+
+.container {
+  width: 40%;
+  height: 40%;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #6ba1a3;
+  border-radius: 30px;
+}
+
+.container h1 {
+  text-align: center;
+  color: #FFF;
+}
+
+.search {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.search form {
+  display: flex;
+}
+
+.search input {
+  padding: 15px;
+  border: 1px solid black;
+  outline: none;
+  width: 100%;
+}
+
+.li-container {
+  background-color: #6ba1a3;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+}
+
+
+li {
+  padding-left: 5px;
+  list-style: none;
+  background-color: #85b8b9;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  color:#F3F2C9;
+/*   flex-direction: column;
+  flex-wrap: wrap; */
+}
+
+li p {
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+.btn-delete {
+  margin-left: auto;
+  border: none;
+  background-color: #e31746;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 10%;
+  font-size: 1.2em;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+  background-color: #ff6868;
+}
+
+.btn-add {
+  margin-left: auto;
+  border: none;
+  background-color: rgb(65, 146, 65);
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 10%;
+  font-size: 2em;
+}
+
+.btn-add:hover {
+  cursor: pointer;
+  background-color: rgb(104, 209, 104);
+}
+
+.empty {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 575px) {
+
+  .container {
+    width: 80%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1024px) {
+
+  .container {
+    width: 60%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+  }
+}
